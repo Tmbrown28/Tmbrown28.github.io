@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head> Drawing Graphics with Canvas </head>
+<title> Canvas1 </title>
+<body>
+    <h1>Canvas Element</h1>
+    <p>The HTML <'canvas'> element is used to draw graphics on a web page.</p>
+    <h2>Methods</h2>
+    <p>Canvas has several methods for drawing paths, boxes, circles, and text.</p>
+
+    <!-- First canvas -->
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+    </script>
+
+    <!-- Second canvas -->
+    <canvas id="myCanvas1" width="300" height="200"></canvas>
+    <script>
+        var c1 = document.getElementById("myCanvas1");
+        var ctx1 = c1.getContext("2d");
+        ctx1.font = "40px Arial";
+        ctx1.strokeText("Hello World", 10, 50);
+    </script>
+
+    <!-- Third canvas -->
+    <canvas id="myCanvas2" width="250" height="150"></canvas>
+    <script>
+        var c2 = document.getElementById("myCanvas2");
+        var ctx2 = c2.getContext("2d");
+        ctx2.font = "30px Verdana";
+        ctx2.fillStyle = "blue";
+        ctx2.fillText("Custom Hello", 20, 60);
+    </script>
+<hr>
+	<canvas id="path" width="400" height="200" style="border:1px solid grey;"></canvas>
+		<script>
+		
+		const canvas = document.getElementById("path");
+		const ctx = canvas.getContext("2d");
+		
+		ctx.beginPath();
+		
+		ctx.moveTo(0,0);
+		
+		ctx.lineTo(200,100);
+		
+		ctx.stroke()
+
+
+
+		ctx.beginPath();
+		ctx.moveTo(0,0);
+		ctx.lineTo(200,100);
+		ctx.stroke()
+		</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
